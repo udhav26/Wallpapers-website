@@ -1,8 +1,9 @@
 <html>
-
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
   <style>
     div.gallery {
       margin: 5px;
@@ -20,12 +21,26 @@
     }
 
     div.gallery img {
-      width: 250px;
-      height: 500px;
+      width: 280px;
+      height: 600px;
     }
 
     div.heading {
       font-family: 'Itim', cursive;
+      color: blue;
+      font-size: xx-large;
+    }
+
+    div.slide img  {
+      border: 3px solid red;
+      position: center;
+    }
+    
+    div.slidess {
+      position:absolute;
+      margin-top: 5px;
+      font-size: large;
+      font-family: 'Oswald', sans-serif;
       color: blue;
     }
   </style>
@@ -33,9 +48,47 @@
 
 
 <body>
+  <script>
+    var i = 0;
+    var images = [];
+    var time = 2000;
+
+    images[0] = 'img/image1.jpg';
+    images[1] = 'img/image2.jpg';
+    images[2] = 'img/image3.jpg';
+    images[3] = 'img/image4.jpg';
+    images[4] = 'img/image5.jpg';
+    images[5] = 'img/image6.jpg';
+    images[6] = 'img/image7.jpg';
+    images[7] = 'img/image8.jpg';
+    images[8] = 'img/image9.jpg';
+
+    function changeImg(){
+      document.slide.src = images[i];
+
+      if(i < images.length - 1){
+        i++;
+      } else {
+        i= 0;
+      }
+
+      setTimeout("changeImg()", time)
+    }
+
+    window.onload = changeImg;
+  </script>
+
+  <div class="slidess">
+    <h1>Welcome to Udhav's wallpaper gallery.</h1></div>  
+
+  <div class="slide">
+    <a target="_blank" href="img/image1.png" class="slides">
+      <img name="slide" height="600" width="400">
+    </a>
+  </div>
 
   <div class="heading">
-    <h1>Welcome to Udhav's wallpaper gallery.</h1>
+    <p>Here are all the wallpapers, I have right now. I add more wallpapers everyday, so be sure to check them out. </p>
   </div>
 
   <div class="gallery">
@@ -481,6 +534,79 @@
     </a>
     
   </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image69.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image70.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image71.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image72.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image73.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image74.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image75.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image76.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image77.png" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image78.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image79.png" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+  <div class="gallery">
+    <a target="_blank" href="img/image68.jpg">
+      <img src="img/image80.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    
+  </div>
+
 
 
 
