@@ -1,0 +1,55 @@
+div.gallery {
+  margin: 5px;
+  border-radius:  1px solid #ccc;
+  float: left;
+}
+html {
+  background-image: url("img/background.jpg " );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+div.gallery img {
+  width: 300px;
+  height: 600px;
+  border: 3px solid black;
+}
+
+/* div.gallery img:hover {
+  border: 3px solid red;
+} */
+
+div.heading {
+  font-family: 'Itim', cursive;
+  color:aqua;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 70;
+}
+
+div.gif {
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 180;
+}
+
+div.slide.slide img  {
+  border: 3px solid red;
+  margin-left: 80;
+  margin-top: 50;
+}
+
+div.slidess {
+  position:absolute;
+  margin-top: 5px;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+  color:aqua;
+  margin-left: 400;
+}
+
+div.slidesssss img{
+  position: absolute;
+}

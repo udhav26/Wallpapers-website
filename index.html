@@ -3,107 +3,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <style>
-    div.gallery {
-      margin: 5px;
-      border-radius:  1px solid #ccc;
-      float: left;
-    }
-    html {
-      background-image: url("img/background.jpg " );
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-
-    div.gallery img {
-      width: 300px;
-      height: 600px;
-      border: 3px solid black;
-    }
-    
-    /* div.gallery img:hover {
-      border: 3px solid red;
-    } */
-
-    div.heading {
-      font-family: 'Itim', cursive;
-      color:aqua;
-      font-weight: bold;
-      font-size: 50px;
-      text-align: center;
-      margin-top: 70;
-    }
-
-    div.gif {
-      position: absolute;
-      margin-left: 400px;
-      margin-top: 180;
-    }
-
-    div.slide.slide img  {
-      border: 3px solid red;
-      margin-left: 80;
-      margin-top: 50;
-    }
-    
-    div.slidess {
-      position:absolute;
-      margin-top: 5px;
-      font-size: 30px;
-      font-family: 'Oswald', sans-serif;
-      color:aqua;
-      margin-left: 400;
-    }
-
-    div.slidesssss img{
-      position: absolute;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
-  <script>
-    var i = 0;
-    var images = [];
-    var time = 2000;
-
-    images[0] = 'img/image1.jpg';
-    images[1] = 'img/image2.jpg';
-    images[2] = 'img/image3.jpg';
-    images[3] = 'img/image4.jpg';
-    images[4] = 'img/image5.jpg';
-    images[5] = 'img/image6.jpg';
-    images[6] = 'img/image7.jpg';
-    images[7] = 'img/image8.jpg';
-    images[8] = 'img/image9.jpg';
-    images[9] = 'img/image10.jpg';
-    images[10] = 'img/image11.jpg';
-    images[11] = 'img/image12.png';
-    images[12] = 'img/image13.png';
-    images[13] = 'img/image14.png';
-    images[14] = 'img/image15.png';
-    images[15] = 'img/image16.png';
-    images[16] = 'img/image17.png';
-    images[17] = 'img/image18.png';
-
-    function changeImg(){
-      document.slide.src = images[i];
-
-      if(i < images.length - 1){
-        i++;
-      } else {
-        i= 0;
-      }
-
-      setTimeout("changeImg()", time)
-    }
-
-    window.onload = changeImg;
-  </script>
-
   <div class="slidess">
     <h1>Welcome to Udhav's wallpaper gallery.</h1>
   </div> 
@@ -773,7 +676,7 @@
     
   </div>
 
-
+  <script src="app.js"></script>
 </body>
 
 </html>
