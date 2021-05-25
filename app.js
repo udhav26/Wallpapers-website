@@ -1,3 +1,27 @@
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 20,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+});
+
+
+
 // var i = 0;
 // var images = [];
 // var time = 2000;
@@ -34,3 +58,30 @@
 // }
 
 // window.onload = changeImg;
+
+const img = document.querySelectorAll("img");
+img[0].src = "https://picsum.photos/200/301"; // image 1
+img[1].src = "https://picsum.photos/200/302"; // image 2
+img[2].src = "https://picsum.photos/200/303"; // image 3
+
+const lightbox = document.createElement('div');
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox);
+
+const images = document.querySelectorAll('img');
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    lightbox.classList.add('active');
+    const img = document.createElement('img');
+    img.src = image.src;
+    while(lightbox.firstChild){
+      lightbox.removeChild(lightbox.firstChild);
+    };
+    lightbox.appendChild(img);
+  });
+});
+
+lightbox.addEventListener('click', e=> {
+  if(e.target !== e.currentTarget) return;
+  lightbox.classList.remove('active');
+})

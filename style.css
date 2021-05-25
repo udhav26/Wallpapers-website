@@ -1,59 +1,3 @@
-/* div.gallery {
-  margin: 5px;
-  border-radius:  1px solid #ccc;
-  float: left;
-}
-html {
-  background-image: url("img/background.jpg " );
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-div.gallery img {
-  width: 300px;
-  height: 600px;
-  border: 3px solid black;
-}
-
-/* div.gallery img:hover {
-  border: 3px solid red;
-} */
-
-/* div.heading { 
-  font-family: 'Itim', cursive;
-  color:aqua;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 70;
-}
-
-div.gif {
-  position: absolute;
-  margin-left: 400px;
-  margin-top: 180;
-}
-
-div.slide.slide img  {
-  border: 3px solid red;
-  margin-left: 80;
-  margin-top: 50;
-}
-
-div.slidess {
-  position:absolute;
-  margin-top: 5px;
-  font-size: 30px;
-  font-family: 'Oswald', sans-serif;
-  color:aqua;
-  margin-left: 400;
-}
-
-div.slidesssss img{
-  position: absolute;
-}  */
-
 *
 {
   margin: 0;
@@ -77,18 +21,28 @@ body {
   background: black;
 }
 .heading {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  margin-bottom: 1200px;
+  font-family:'Times New Roman', Times, serif;
+  margin-bottom: 800px;
   text-align: center;
   font-size: 70px;
-  font-style: oblique;
+  font-style:italic;
   color: blue;
   position: absolute;
 }
+.heading-2 {
+  font-family:'Times New Roman', Times, serif;
+  margin-top: 1400px;
+  text-align: center;
+  font-size: 70px;
+  font-style:italic;
+  color: blue;
+  position: absolute;
+}
+
 .swiper-container {
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 200px;
+  padding-top: 300px;
+  padding-bottom: 300px;
 }
 .swiper-slide {
   background-position: center;
@@ -102,4 +56,59 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+
+
+body{
+  margin: 0;
+  
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  justify-content:center;
+  align-content:center;
+  grid-gap: 10px;
+  height: 170vh;
+  position: absolute;
+  margin-top: 10200px;
+  
+}
+
+.grid img{
+  width: 300px;
+  height: 600px;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+
+.grid img:hover{
+  border: 2px solid red;
+  transition: all 0.3s ease;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9); 
+  display:none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img{
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
 }
