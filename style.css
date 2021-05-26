@@ -17,12 +17,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 60vh;
   background: black;
 }
 .heading {
   font-family:'Times New Roman', Times, serif;
-  margin-bottom: 800px;
+  margin-bottom: 1000px;
   text-align: center;
   font-size: 70px;
   font-style:italic;
@@ -31,7 +31,7 @@ body {
 }
 .heading-2 {
   font-family:'Times New Roman', Times, serif;
-  margin-top: 1400px;
+  margin-top: 1100px;
   text-align: center;
   font-size: 70px;
   font-style:italic;
@@ -41,8 +41,8 @@ body {
 
 .swiper-container {
   width: 100%;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }
 .swiper-slide {
   background-position: center;
@@ -73,7 +73,7 @@ body{
   grid-gap: 10px;
   height: 170vh;
   position: absolute;
-  margin-top: 10200px;
+  margin-top: 9900px;
   
 }
 
