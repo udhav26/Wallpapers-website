@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&family=Poppins:wght@100;300;400;500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	font-family: "Raleway", sans-serif;
+	background: #2F3238;
+}
+
+.container{
+	margin: 10px;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.image{
+	background: #50A7FF;
+	position: relative;
+	flex: 1;
+	max-width: 460px;
+	height: 300px;
+	margin: 20px;
+	overflow: hidden;
+}
+
+.image img{
+	opacity: 0.8;
+	position: relative;
+	vertical-align: top;
+	transition: 0.6s;
+	transition-property: opacity;
+}
+
+.image:hover img{
+	opacity: 1;
+}
+
+.image .details{
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.image .details h2{
+	text-align: center;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 70px;
+	transition: 0.4s;
+	transition-property: transform;
+}
+
+.image .details h2 span{
+	font-weight: 900;
+}
+
+.image:hover .details h2{
+	transform: translateY(-30px);
+}
+
+.image .details p{
+	margin: 30px 30px 0 30px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	opacity: 0;
+	transition: 0.6s;
+	transition-property: opacity, transform;
+}
+
+.image:hover .details p{
+	opacity: 1;
+	transform: translateY(-40px);
+}
+
+
+
+
+
+.heading{
+	color: white;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.heading-2{
+	color: white;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	margin-bottom: 50px;
+}
+
+/* Responsive CSS */
+
+@media (max-width: 1080px){
+	.image{
+		flex: 100%;
+		max-width: 480px;
+	}
+}
+
+@media (max-width: 400px){
+	.image .details p{
+		font-size: 16px;
+	}
+
+	.more .read-more, .more .icon-links a i{
+		font-size: 18px;
+	}
+}
+
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  width: 100%;
+  height: 75px;
+  background-color: rgb(0, 217, 255);
+  line-height: 75px;
+  padding: 0px 80px;
+}
+nav .logo{
+  float: left;
+}
+nav .logo p{
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: white;
+  text-transform: uppercase;
+}
+nav .logo p:hover{
+  text-decoration: underline black;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font: 18px;
+  text-transform: uppercase;
+  padding: 0px 20px;
+}
+nav ul li a:hover{
+  color: black;
+}
+nav ul .active{
+  color: black;
+}
+
+.checkbtn{
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  float:right;
+  display: none;
+}
+#check{
+  display:none;
+}
+
+@media screen and (max-width:990px){
+  nav{
+    padding: 0px 50px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  nav .logo p{
+    font-size: 30px;
+  }
+  nav ul{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(42, 63, 255);
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+  nav ul li{
+    display:block;
+    margin: 60px 0px;
+    line-height: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .background{
+    display: block;
+  }
+}

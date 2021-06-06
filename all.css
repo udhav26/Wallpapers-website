@@ -1,3 +1,69 @@
+body{
+  margin: 0;
+  background-color: black;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content:center;
+  align-content:center;
+  grid-gap: 10px;
+  height: 170vh;
+}
+
+.grid img{
+  width: 200px;
+  height: 400px;
+  cursor: pointer;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9); 
+  display:none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img{
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.heading{
+  color: white;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-top: 50px;
+  
+}
+
+@media (max-width: 1080px){
+	.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content:center;
+    align-content:center;
+    grid-gap: 10px;
+    height: 250vh;
+  }
+}
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Padauk&family=Poppins:wght@100;300;400;500&display=swap');
 
 *{
@@ -58,20 +124,6 @@ nav ul .active{
   display:none;
 }
 
-.heading{
-  position: absolute;
-  text-align: center;
-  margin-top: 200px;
-  left: 100px;
-  right: 100px;
-  color: blue;
-}
-.background{
-  position: absolute;
-  
-}
-
-
 @media screen and (max-width:990px){
   nav{
     padding: 0px 50px;
@@ -100,15 +152,5 @@ nav ul .active{
   #check:checked ~ ul{
     left: 0;
   }
-  .background{
-    display: block;
-    
-    
-  }
+  
 }
-
-
-
-
-
-
