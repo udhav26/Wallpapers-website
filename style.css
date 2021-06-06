@@ -77,7 +77,7 @@ nav ul .active{
     display: block;
   }
   nav .logo p{
-    font-size: 30px;
+    font-size: 20px;
   }
   nav ul{
     width: 100%;
@@ -97,11 +97,7 @@ nav ul .active{
   #check:checked ~ ul{
     left: 0;
   }
-  .background{
-    display: block;
-    
-    
-  }
+  
 }
 
 
