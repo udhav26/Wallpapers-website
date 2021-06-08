@@ -9,7 +9,8 @@ body{
   justify-content:center;
   align-content:center;
   grid-gap: 10px;
-  height: 170vh;
+  /* height: 170vh; */
+  margin-top: 100px;
 }
 
 .grid img{
@@ -56,8 +57,13 @@ body{
     grid-template-columns: repeat(2, 200px);
     justify-content:center;
     align-content:center;
-    grid-gap: 10px;
-    height: 250vh;
+    
+    margin-top: 100px
+  }
+  .grid img{
+    width: 200px;
+    height: 400px;
+    cursor: pointer;
   }
 }
 
@@ -132,7 +138,7 @@ nav ul .active{
     display: block;
   }
   nav .logo p{
-    font-size: 30px;
+    font-size: 20px;
   }
   nav ul{
     width: 100%;
