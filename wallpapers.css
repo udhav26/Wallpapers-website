@@ -116,6 +116,9 @@ body{
 		flex: 100%;
 		max-width: 480px;
 	}
+	.heading{
+		margin-top: 200px;
+	}
 }
 
 @media (max-width: 400px){

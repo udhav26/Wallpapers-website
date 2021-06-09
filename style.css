@@ -66,6 +66,14 @@ nav ul .active{
   right: 100px;
   color: blue;
 }
+.btn {
+  background-color: rgb(0, 217, 255);
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  margin-left: 400px;
+  
+}
 
 
 
