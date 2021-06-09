@@ -208,6 +208,7 @@ nav ul .active{
     left: -100%;
     text-align: center;
     transition: 0.5s ease-in-out;
+		
   }
   nav ul li{
     display:block;
@@ -217,7 +218,7 @@ nav ul .active{
   #check:checked ~ ul{
     left: 0;
   }
-  .background{
-    display: block;
-  }
+  .container{
+		margin-top: 190px;
+	}
 }
