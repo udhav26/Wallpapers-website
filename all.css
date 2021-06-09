@@ -1,11 +1,13 @@
 body{
   margin: 0;
+  background-image: url(markus-spiske-k0rVudBoB4c-unsplash.jpg);
   background-color: black;
+  background-repeat: no-repeat;
 }
 
 .grid{
   display: grid;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(4, 200px);
   justify-content:center;
   align-content:center;
   grid-gap: 10px;
@@ -102,9 +104,10 @@ nav .logo p{
   letter-spacing: 1.5px;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
 }
 nav .logo p:hover{
-  text-decoration: underline black;
+  color: black;
 }
 nav ul{
   float: right;

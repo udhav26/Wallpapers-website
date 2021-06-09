@@ -156,9 +156,10 @@ nav .logo p{
   letter-spacing: 1.5px;
   color: white;
   text-transform: uppercase;
+	cursor: pointer;
 }
 nav .logo p:hover{
-  text-decoration: underline black;
+  color: black;
 }
 nav ul{
   float: right;
